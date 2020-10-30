@@ -1,7 +1,6 @@
 package ru.samsung.itschool.book.equation243;
 
 import android.app.Activity;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -25,8 +24,8 @@ public class MainActivity extends Activity {
                     findViewById(R.id.coefficient_b)).getText().toString());
             double c = Double.parseDouble( ((EditText)
                     findViewById(R.id.coefficient_c)).getText().toString());
-            TextView result = (TextView) findViewById(R.id.result);
-            result.setText("" + String.valueOf((c - b) / a));
+            TextView result = findViewById(R.id.result);
+            result.setText(String.valueOf((c - b) / a));
         }
 
 }
